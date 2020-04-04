@@ -1,0 +1,22 @@
+.navbar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    background-color: var(--navbar-background-color);
+    transition: background-color 500ms;
+}
+
+.navbar__logo {
+    padding: 0 16px;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--logo-color);
+    font-weight: 800;
+    text-shadow:
+        -1px -1px 0 var(--logo-outline-color),  
+        1px -1px 0 var(--logo-outline-color),
+        -1px 1px 0 var(--logo-outline-color),
+        1px 1px 0 var(--logo-outline-color);
+}
