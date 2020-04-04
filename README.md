@@ -1,3 +1,5 @@
+Deployed to: https://neljamin.github.io/the-league-of-beans/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
