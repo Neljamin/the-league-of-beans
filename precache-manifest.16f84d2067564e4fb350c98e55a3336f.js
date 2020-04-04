@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e432df68224e2f0db0724e0039d5b61a",
+    "revision": "7a2856c56ac510c0ee021b49809ea2f7",
     "url": "/the-league-of-beans/index.html"
   },
   {
-    "revision": "cf9c4aeb57bf13b98ad8",
+    "revision": "c79e878ddd0dd4e07162",
     "url": "/the-league-of-beans/static/css/main.2be4ded7.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-league-of-beans/static/js/2.1f30e012.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cf9c4aeb57bf13b98ad8",
-    "url": "/the-league-of-beans/static/js/main.0918a5d0.chunk.js"
+    "revision": "c79e878ddd0dd4e07162",
+    "url": "/the-league-of-beans/static/js/main.2271d054.chunk.js"
   },
   {
     "revision": "7005ba890b089d7e5fa8",

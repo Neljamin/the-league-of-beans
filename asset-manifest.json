@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/the-league-of-beans/static/css/main.2be4ded7.chunk.css",
-    "main.js": "/the-league-of-beans/static/js/main.0918a5d0.chunk.js",
-    "main.js.map": "/the-league-of-beans/static/js/main.0918a5d0.chunk.js.map",
+    "main.js": "/the-league-of-beans/static/js/main.2271d054.chunk.js",
+    "main.js.map": "/the-league-of-beans/static/js/main.2271d054.chunk.js.map",
     "runtime-main.js": "/the-league-of-beans/static/js/runtime-main.242b3372.js",
     "runtime-main.js.map": "/the-league-of-beans/static/js/runtime-main.242b3372.js.map",
     "static/js/2.1f30e012.chunk.js": "/the-league-of-beans/static/js/2.1f30e012.chunk.js",
     "static/js/2.1f30e012.chunk.js.map": "/the-league-of-beans/static/js/2.1f30e012.chunk.js.map",
     "index.html": "/the-league-of-beans/index.html",
-    "precache-manifest.36471be3376c799c9808cae6623ed7bd.js": "/the-league-of-beans/precache-manifest.36471be3376c799c9808cae6623ed7bd.js",
+    "precache-manifest.16f84d2067564e4fb350c98e55a3336f.js": "/the-league-of-beans/precache-manifest.16f84d2067564e4fb350c98e55a3336f.js",
     "service-worker.js": "/the-league-of-beans/service-worker.js",
     "static/css/main.2be4ded7.chunk.css.map": "/the-league-of-beans/static/css/main.2be4ded7.chunk.css.map",
     "static/js/2.1f30e012.chunk.js.LICENSE.txt": "/the-league-of-beans/static/js/2.1f30e012.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.242b3372.js",
     "static/js/2.1f30e012.chunk.js",
     "static/css/main.2be4ded7.chunk.css",
-    "static/js/main.0918a5d0.chunk.js"
+    "static/js/main.2271d054.chunk.js"
   ]
 }

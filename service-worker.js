@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/the-league-of-beans/precache-manifest.36471be3376c799c9808cae6623ed7bd.js"
+  "/the-league-of-beans/precache-manifest.16f84d2067564e4fb350c98e55a3336f.js"
 );
 
 self.addEventListener('message', (event) => {
