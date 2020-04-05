@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import _ from 'lodash';
 import { Container } from 'semantic-ui-react';
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 
@@ -20,10 +21,12 @@ export default class LandingPage extends Component {
         this.contentService.getContent(BODY_CONTENT_ID)
             .then(content => {
                 const body = documentToHtmlString(content.fields.body);
+                const imageUrl  = _.get(content, 'fields.headerImage.fields.file.url')
                 this.setState({
                     body: {
                         __html: body
-                    }
+                    },
+                    imageUrl
                 });
             });
     }
@@ -32,7 +35,7 @@ export default class LandingPage extends Component {
         return (
             <div className="landing-page">
                 <div className="landing-page__main-image"></div>
-                <HeaderImage image={process.env.PUBLIC_URL +'/assets/images/landing-main.jpg'} />
+                <HeaderImage image={this.state.imageUrl} />
                 <Container>
                     <div dangerouslySetInnerHTML={this.state.body}></div>
                 </Container>
