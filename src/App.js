@@ -18,7 +18,7 @@ function App() {
         <MinecraftPage />
       </Route>
       <Route exact path="/">
-        <LandingPage />
+        <MinecraftPage />
       </Route>
       <Footer />
     </Router>
