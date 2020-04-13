@@ -1,0 +1,25 @@
+.minecraft-coordinate {
+    display: flex;
+    margin-bottom: 48px;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+}
+
+.minecraft-coordinate__image {
+    display: flex;
+    width: 400px;
+    height: 230px;
+    margin-left: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0px;
+
+    @media only screen and (max-width: 600px) {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 24px;
+    }
+}

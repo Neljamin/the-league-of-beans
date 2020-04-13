@@ -1,3 +1,4 @@
+import React, { Component } from 'react';
 import styled, { css } from 'styled-components';
 
 import _ from 'lodash';
@@ -13,9 +14,12 @@ window.addEventListener('scroll', _.debounce(() => {
     }
 }, 100));
 
-const HeaderImage = styled.div`
+const StyledHeaderImage = styled.div`
+    display: flex;
     height: 90vh;
     margin-bottom: 24px;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 0px;
@@ -25,4 +29,26 @@ const HeaderImage = styled.div`
     `}
 `;
 
-export default HeaderImage;
+const StyledTitle = styled.span`
+    color: var(--white);
+    font-size: 64px;
+    line-height: 64px;
+    text-shadow:
+        -1px -1px 0 var(--black),  
+        1px -1px 0 var(--black),
+        -1px 1px 0 var(--black),
+        1px 1px 0 var(--black);
+`;
+
+export default class HeaderImage extends Component {
+    render() {
+        const { image, title } = this.props;
+        return (
+            <StyledHeaderImage image={image}>
+                <StyledTitle>
+                    {title}
+                </StyledTitle>
+            </StyledHeaderImage>
+        )
+    }
+}

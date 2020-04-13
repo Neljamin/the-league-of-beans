@@ -1,16 +1,27 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  // Switch,
+  Route,
+  // Link
+} from "react-router-dom";
 
 import './App.scss';
-import { LandingPage } from './components/pages';
+import { LandingPage, MinecraftPage } from './components/pages';
 import { Navbar, Footer } from './components/widgets';
 
 function App() {
   return (
-    <div>
+    <Router>
       <Navbar />
-      <LandingPage />
+      <Route path="/minecraft">
+        <MinecraftPage />
+      </Route>
+      <Route exact path="/">
+        <LandingPage />
+      </Route>
       <Footer />
-    </div>
+    </Router>
   );
 }
 
