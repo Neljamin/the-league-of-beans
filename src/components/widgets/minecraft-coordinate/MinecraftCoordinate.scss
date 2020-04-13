@@ -10,12 +10,17 @@
 
 .minecraft-coordinate__image {
     display: flex;
-    width: 400px;
-    height: 230px;
+    width: 600px;
+    height: 320px;
     margin-left: 24px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 0px;
+
+    @media only screen and (max-width: 1000px) {
+        width: 480px;
+        height: 280px;
+    }
 
     @media only screen and (max-width: 600px) {
         width: 100%;
