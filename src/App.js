@@ -1,24 +1,33 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
-  // Switch,
-  Route,
-  // Link
+  HashRouter as Router,
+  Route
 } from "react-router-dom";
 
 import './App.scss';
 import { LandingPage, MinecraftPage } from './components/pages';
 import { Navbar, Footer } from './components/widgets';
 
+const LINKS = [
+  {
+    name: 'Home',
+    route: '/'
+  },
+  {
+    name: 'Minecraft',
+    route: '/minecraft'
+  }
+];
+
 function App() {
   return (
     <Router>
-      <Navbar />
+      <Navbar links={LINKS} />
       <Route path="/minecraft">
         <MinecraftPage />
       </Route>
       <Route exact path="/">
-        <MinecraftPage />
+        <LandingPage />
       </Route>
       <Footer />
     </Router>
