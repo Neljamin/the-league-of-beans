@@ -17,12 +17,7 @@
 
 .minecraft-coordinate__text {
     width: 100%;
-    max-width: 40%;
     padding: 12px;
-
-    @media only screen and (max-width: 600px) {
-        max-width: 100%;
-    }
 }
 
 .minecraft-coordinate__image {
@@ -32,6 +27,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 0px;
+    flex-shrink: 0;
 
     @media only screen and (max-width: 1000px) {
         width: 480px;
