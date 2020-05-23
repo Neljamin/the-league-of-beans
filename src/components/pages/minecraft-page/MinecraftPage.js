@@ -54,8 +54,12 @@ export default class MinecraftPage extends Component {
                 <HeaderImage title={title} image={imageUrl} />
                 <Container>
                     <div className="minecraft-page__description" dangerouslySetInnerHTML={description}></div>
-                    {body.map(itemProps => (
-                        <MinecraftCoordinate key={itemProps.title} {...itemProps} />
+                    {body.map((itemProps, index) => (
+                        <MinecraftCoordinate
+                            key={itemProps.title}
+                            imageLeft={index % 2 === 0}
+                            {...itemProps}
+                        />
                     ))}
                 </Container>
             </div>
