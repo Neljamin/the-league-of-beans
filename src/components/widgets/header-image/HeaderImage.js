@@ -16,6 +16,7 @@ window.addEventListener('scroll', _.debounce(() => {
 
 const StyledHeaderImage = styled.div`
     display: flex;
+    position: relative;
     height: 90vh;
     margin-bottom: 24px;
     justify-content: center;
@@ -23,6 +24,14 @@ const StyledHeaderImage = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 0px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        background: radial-gradient(transparent 50%, black), transparent;
+        height: 100%;
+    }
 
     ${props => props.image && css`
         background-image: url(${props.image});
