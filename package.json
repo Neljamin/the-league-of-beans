@@ -2,7 +2,7 @@
   "name": "the-league-of-beans",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://theleagueofbeans.com/",
+  "homepage": "http://theleagueofbeans.com",
   "dependencies": {
     "@contentful/rich-text-html-renderer": "^13.4.0",
     "@testing-library/jest-dom": "^4.2.4",
