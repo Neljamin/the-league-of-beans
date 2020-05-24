@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 import { Link } from "react-router-dom";
 
-import './SiteNavbar.scss';
+import styles from './SiteNavbar.module.scss';
 
 export default class SiteNavbar extends Component {
     state = {
@@ -22,26 +22,47 @@ export default class SiteNavbar extends Component {
         const { links = [] } = this.props;
         const { showLinks } = this.state;
 
-        console.log(links);
-
         return (
-            <div className="site-navbar">
-                <div className="site-navbar__logo">
+            <div className={styles['site-navbar']}>
+                <div className={styles['site-navbar__logo']}>
                     Beans
                 </div>
-                <div className="site-navbar__links">
-                    <button onClick={this.toggleShowLinks} className="site-navbar__toggle-links-button">
-                        <span className={classNames('site-navbar__toggle-links-button-icon', { 'site-navbar__toggle-links-button-icon--hide': showLinks })}>
+                <div className={styles['site-navbar__links']}>
+                    <button
+                        onClick={this.toggleShowLinks} 
+                        className={styles['site-navbar__toggle-links-button']}
+                    >
+                        <span className={
+                            classNames(
+                                styles['site-navbar__toggle-links-button-icon'],
+                                {
+                                    [styles['site-navbar__toggle-links-button-icon--hide']]: showLinks
+                                }
+                            )}
+                        >
                             <i className='fas fa-bars'></i>
                         </span>
-                        <span className={classNames('site-navbar__toggle-links-button-icon', { 'site-navbar__toggle-links-button-icon--hide': !showLinks })}>
+                        <span className={
+                            classNames(
+                                styles['site-navbar__toggle-links-button-icon'],
+                                {
+                                    [styles['site-navbar__toggle-links-button-icon--hide']]: !showLinks
+                                }
+                            )
+                        }>
                             <i className='fas fa-times'></i>
                         </span>
                     </button>
-                    {showLinks && <ul className='site-navbar__link-dropdown'>
+                    {showLinks && <ul className={styles['site-navbar__link-dropdown']}>
                         {links.map(link => (
-                            <li key={link.route} className='site-navbar__link-item'>
-                                <Link onClick={this.handleLinkClick} className='site-navbar__link' to={link.route}>{link.name}</Link>
+                            <li key={link.route} className={styles['site-navbar__link-item']}>
+                                <Link
+                                    onClick={this.handleLinkClick}
+                                    className={styles['site-navbar__link']}
+                                    to={link.route}
+                                >
+                                    {link.name}
+                                </Link>
                             </li>
                         ))}
                     </ul>}
