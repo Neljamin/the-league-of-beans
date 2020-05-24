@@ -11,6 +11,18 @@ class ContentService {
     getContent(contentId) {
         return this.client.getEntry(contentId);
     }
+
+    getAllPagesContent() {
+        return this.client.getEntries()
+            .then(entries => {
+                return entries.items.reduce((acc, item) => {
+                    if (item.sys.contentType.sys.id === 'page') {
+                        return [...acc, item];
+                    }
+                    return [...acc];
+                }, []);
+            });
+    }
 }
 
 export default new ContentService();
