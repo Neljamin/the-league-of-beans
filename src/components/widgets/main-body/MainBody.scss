@@ -1,0 +1,11 @@
+.main-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-body__content {
+    max-width: 800px;
+    min-height: 800px;
+    padding: 0 16px;
+}

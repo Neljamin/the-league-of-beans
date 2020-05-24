@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
-import { Container } from 'semantic-ui-react';
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 
 import './LandingPage.scss';
-import { HeaderImage } from '../../widgets/';
+import { HeaderImage, MainBody } from '../../widgets/';
 import { contentService } from '../../../services';
 
 const CONTENT_ID = 'VRC12pE1gJZZmqYDVrE8u';
@@ -35,9 +34,9 @@ export default class LandingPage extends Component {
         return (
             <div className="landing-page">
                 <HeaderImage image={this.state.imageUrl} />
-                <Container>
+                <MainBody>
                     <div dangerouslySetInnerHTML={this.state.description}></div>
-                </Container>
+                </MainBody>
             </div>
         )
     }
