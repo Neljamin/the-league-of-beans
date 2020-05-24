@@ -1,10 +1,9 @@
 import _ from 'lodash';
 import React, { Component } from 'react';
-import { Container } from 'semantic-ui-react';
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 
 import './RocketLeaguePage.scss';
-import { HeaderImage, MediaWithDescription } from '../../widgets';
+import { HeaderImage, MediaWithDescription, MainBody } from '../../widgets';
 import { contentService } from '../../../services';
 
 const CONTENT_ID = '4VbH6oL30BM12r2RYnhQ2w';
@@ -48,7 +47,7 @@ export default class RocketLeaguePage extends Component {
         return (
             <div className="rocket-league-page">
                 <HeaderImage title={title} image={imageUrl} />
-                <Container>
+                <MainBody>
                     <div className="rocket-league-page__description" dangerouslySetInnerHTML={description}></div>
                     {body.map((itemProps, index) => (
                         <MediaWithDescription
@@ -61,7 +60,7 @@ export default class RocketLeaguePage extends Component {
                         </MediaWithDescription>
                     ))}
                     
-                </Container>
+                </MainBody>
             </div>
         )
     }

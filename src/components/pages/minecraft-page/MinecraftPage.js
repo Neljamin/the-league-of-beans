@@ -1,10 +1,9 @@
 import _ from 'lodash';
 import React, { Component } from 'react';
-import { Container } from 'semantic-ui-react';
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 
 import './MinecraftPage.scss';
-import { HeaderImage, MinecraftCoordinate } from '../../widgets';
+import { HeaderImage, MinecraftCoordinate, MainBody } from '../../widgets';
 import { contentService } from '../../../services';
 
 const CONTENT_ID = '2engluBafuOhCCaxCbFC6D';
@@ -52,7 +51,7 @@ export default class MinecraftPage extends Component {
         return (
             <div className="minecraft-page">
                 <HeaderImage title={title} image={imageUrl} />
-                <Container>
+                <MainBody>
                     <div className="minecraft-page__description" dangerouslySetInnerHTML={description}></div>
                     {body.map((itemProps, index) => (
                         <MinecraftCoordinate
@@ -61,7 +60,7 @@ export default class MinecraftPage extends Component {
                             {...itemProps}
                         />
                     ))}
-                </Container>
+                </MainBody>
             </div>
         )
     }
