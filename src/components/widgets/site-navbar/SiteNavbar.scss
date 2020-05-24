@@ -1,4 +1,4 @@
-.navbar {
+.site-navbar {
     position: fixed;
     z-index: 1;
     display: flex;
@@ -10,7 +10,7 @@
     transition: background-color 500ms;
 }
 
-.navbar__logo {
+.site-navbar__logo {
     padding: 0 16px;
     font-size: 24px;
     text-transform: uppercase;
@@ -23,11 +23,11 @@
         1px 1px 0 var(--logo-outline-color);
 }
 
-.navbar__links {
+.site-navbar__links {
     position: relative;
 }
 
-.navbar__toggle-links-button {
+.site-navbar__toggle-links-button {
     position: relative;
     padding: 0;
     display: flex;
@@ -41,7 +41,7 @@
     margin-right: 24px;
 }
 
-.navbar__toggle-links-button-icon {
+.site-navbar__toggle-links-button-icon {
     display: flex;
     position: absolute;
     left: 0;
@@ -56,7 +56,7 @@
     }
 }
 
-.navbar__link-dropdown {
+.site-navbar__link-dropdown {
     position: absolute;
     padding: 0;
     left: -120px;
@@ -65,12 +65,12 @@
     background-color: white;
 }
 
-.navbar__link-item {
+.site-navbar__link-item {
     width: 100%;
     list-style: none;
 }
 
-.navbar__link {
+.site-navbar__link {
     display: block;
     width: 100%;
     padding: 8px;

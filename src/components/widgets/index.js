@@ -1,4 +1,4 @@
-import Navbar from './navbar';
+import SiteNavbar from './site-navbar';
 import Footer from './footer';
 import HeaderImage from './header-image';
 import MinecraftCoordinate from './minecraft-coordinate';
@@ -9,7 +9,7 @@ import Loader from './loader';
 import ContentfulTypeRenderer from './contentful-type-renderer';
 
 export {
-    Navbar,
+    SiteNavbar,
     Footer,
     HeaderImage,
     MinecraftCoordinate,

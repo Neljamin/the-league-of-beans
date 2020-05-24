@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { HashRouter as Router, Route } from "react-router-dom";
 
 import "./App.scss";
-import { Navbar, Footer, Loader } from "./components/widgets";
+import { SiteNavbar, Footer, Loader } from "./components/widgets";
 import Page from './components/page';
 import { contentService } from "./services";
 
@@ -43,7 +43,7 @@ export default class App extends Component {
 
 		return (
 			<Router>
-				<Navbar links={links} />
+				<SiteNavbar links={links} />
         {pages.map((page, index) => (
           <Route key={index} path={page.fields.route} exact={page.fields.route === '/'}>
             <Page content={page} />
