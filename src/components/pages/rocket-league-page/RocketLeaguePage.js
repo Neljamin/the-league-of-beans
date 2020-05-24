@@ -4,7 +4,7 @@ import { Container } from 'semantic-ui-react';
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 
 import './RocketLeaguePage.scss';
-import { HeaderImage, YouTubeVideo, MediaWithDescription } from '../../widgets';
+import { HeaderImage, MediaWithDescription } from '../../widgets';
 import { contentService } from '../../../services';
 
 const CONTENT_ID = '4VbH6oL30BM12r2RYnhQ2w';
