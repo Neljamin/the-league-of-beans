@@ -43,7 +43,7 @@ export default class App extends Component {
 
 		return (
 			<Router>
-				<Navbar links={links} />
+				{/* <Navbar links={links} /> */}
         {pages.map((page, index) => (
           <Route key={index} path={page.fields.route} exact={page.fields.route === '/'}>
             <Page content={page} />
