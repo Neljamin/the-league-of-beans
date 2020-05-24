@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 
 import './App.scss';
-import { LandingPage, MinecraftPage } from './components/pages';
+import { LandingPage, MinecraftPage, RocketLeaguePage } from './components/pages';
 import { Navbar, Footer } from './components/widgets';
 
 const LINKS = [
@@ -16,6 +16,10 @@ const LINKS = [
   {
     name: 'Minecraft',
     route: '/minecraft'
+  },
+  {
+    name: 'Rocket League',
+    route: '/rocket-league'
   }
 ];
 
@@ -25,6 +29,9 @@ function App() {
       <Navbar links={LINKS} />
       <Route path="/minecraft">
         <MinecraftPage />
+      </Route>
+      <Route path="/rocket-league">
+        <RocketLeaguePage />
       </Route>
       <Route exact path="/">
         <LandingPage />

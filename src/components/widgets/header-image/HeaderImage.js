@@ -33,6 +33,12 @@ const StyledTitle = styled.span`
     color: var(--white);
     font-size: 64px;
     line-height: 64px;
+
+    @media (max-width: 500px) {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
     text-shadow:
         -1px -1px 0 var(--black),  
         1px -1px 0 var(--black),
