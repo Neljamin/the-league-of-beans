@@ -14,6 +14,19 @@ window.addEventListener('scroll', _.debounce(() => {
     }
 }, 100));
 
+export default class HeaderImage extends Component {
+    render() {
+        const { image, title } = this.props;
+        return (
+            <StyledHeaderImage image={image}>
+                <StyledTitle>
+                    {title}
+                </StyledTitle>
+            </StyledHeaderImage>
+        )
+    }
+}
+
 const StyledHeaderImage = styled.div`
     display: flex;
     position: relative;
@@ -55,15 +68,3 @@ const StyledTitle = styled.span`
         1px 1px 0 var(--black);
 `;
 
-export default class HeaderImage extends Component {
-    render() {
-        const { image, title } = this.props;
-        return (
-            <StyledHeaderImage image={image}>
-                <StyledTitle>
-                    {title}
-                </StyledTitle>
-            </StyledHeaderImage>
-        )
-    }
-}

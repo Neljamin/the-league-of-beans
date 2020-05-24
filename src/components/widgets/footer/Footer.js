@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
 import { Container } from 'semantic-ui-react';
-
-import './Footer.scss';
+import styled from 'styled-components';
 
 export default class Footer extends Component {
     render() {
         return (
-            <div className="footer">
+            <StyledFooter>
                 <Container textAlign='right'>
-                    <div className="footer__licence">
+                    <div>
                         Beans &copy; 2020 
                     </div>
                 </Container>
-            </div>
+            </StyledFooter>
         )
     }
 }
+
+const StyledFooter = styled.div`
+    margin-top: 48px;
+    padding: 24px 0;
+    background-color: var(--footer-background);
+    color: var(--footer-text);
+`;
