@@ -38,13 +38,13 @@ export default class SiteNavbar extends Component {
                             <i className='fas fa-times'></i>
                         </span>
                     </button>
-                    {/* {showLinks && <ul className='site-navbar__link-dropdown'>
+                    {showLinks && <ul className='site-navbar__link-dropdown'>
                         {links.map(link => (
                             <li key={link.route} className='site-navbar__link-item'>
                                 <Link onClick={this.handleLinkClick} className='site-navbar__link' to={link.route}>{link.name}</Link>
                             </li>
                         ))}
-                    </ul>} */}
+                    </ul>}
                 </div>
             </div>
         )
